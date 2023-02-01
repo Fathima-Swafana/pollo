@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Ingrese el nombre del alimento"><br>
+    <input type="text" name="description" placeholder="Ingrese el ingredientes para alimento"><br>
+    <input type="text" name="year" placeholder="Ingrese el precio"><br>
+    <input type="file" name="image"><br>
+    <input type="submit">
+
+</form>
+{% endblock %}
